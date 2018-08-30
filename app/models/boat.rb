@@ -25,6 +25,7 @@ class Boat < ActiveRecord::Base
 
   def self.sailboats
     self.where("CLASSIFICATION = SAILBOAT")
+  end
 
 
 end
