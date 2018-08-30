@@ -12,7 +12,7 @@ class Boat < ActiveRecord::Base
   end
 
   def self.ship
-    self.where("LENGTH < 20")
+    self.where("LENGTH >= 20")
   end
 
 
