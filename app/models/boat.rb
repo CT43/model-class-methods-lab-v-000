@@ -23,5 +23,8 @@ class Boat < ActiveRecord::Base
     self.where(CAPTAIN_ID: nil)
   end
 
+  def self.sailboats
+    self.where("CLASSIFICATION = SAILBOAT")
+
 
 end
