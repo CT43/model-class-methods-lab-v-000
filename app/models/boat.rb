@@ -21,6 +21,7 @@ class Boat < ActiveRecord::Base
 
   def self.without_a_captain
     self.where("CAPTAIN_ID = nil")
+  end
 
 
 end
